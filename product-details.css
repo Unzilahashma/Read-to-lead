@@ -1,0 +1,399 @@
+.product{
+    padding: 60px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #121212;
+}
+.product .image{
+    border-radius: 10px;
+    width: 45%;
+    overflow: hidden;
+}
+
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product .details{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  
+}
+.details .title{
+    padding-top: 10%;
+    font-size: 40px;
+    color: #CFAC33;
+    margin-bottom: 10px;
+}
+
+.details .author{
+    font-size: 24px;
+    color: #14ac3d;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.details .rating i{
+    color: #F8C625;
+    font-size: 17px;
+}
+
+.details .description{
+    font-size: 18px;
+    color: #CFAC33;
+    
+}
+.details .description p   {
+    line-height: 23px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.price .amount {
+    color: #14AC3D;
+    font-size: 27px;
+}
+
+.price button{
+    background-color:  #14AC3D;
+    color: #262326;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.related-products{
+    background-color: #262526;
+    padding: 60px 8%;
+
+}
+
+.reviews{
+    background-color: #121212;
+    padding: 60px 8%;
+
+}
+
+.related-products .heading , .reviews .heading{  
+    font-size: 24px;
+    color:  #F8C625;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+
+.review{   
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #262326;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+
+.review .image{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.review img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review .details{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.review .details div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    color:  #F8C625;
+}
+
+.review .date{
+    color:  #14AC3D;
+    font-size: 15px;
+}
+.review .rating i{
+    font-size: 13px;
+}
+
+.review .comment{
+    color:  #14AC3D;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px){
+    .product{
+        padding: 40px 6%;
+        gap: 35px;
+
+    }
+    .details .title{
+        padding-top: 2%;
+        font-size: 32px;
+        margin-bottom: 9px
+    }
+    .product .author{
+        font-size: 18px;
+        margin-bottom: 10px
+
+    }
+    .product .rating i{
+        font-size: 15px;
+    }
+    .product .description p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product .amount{
+        font-size: 23px;
+    }
+    .price button{
+        font-size: 13px;
+        padding: 8px 26px;
+        border-radius: 6px;
+    }
+
+    .related-products{
+        padding: 40px 6%
+           
+    }
+    .reviews{
+        padding: 40px 6%
+    }
+
+    .related-products .heading h3,.reviews .heading h3{
+        font-size: 24px;
+    }
+    .review{
+        padding: 15px 0;
+    }
+    .review .image{
+        width: 50px;
+        height: 50px;
+    }
+    .review .name {
+        font-size: 15px;
+    }
+    .review .date{
+        font-size: 13px;
+    }
+    .review .rating i{
+        font-size: 11px;
+    }
+    .review .comment{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 992px){
+    .product{
+        padding: 30px 5%;
+        gap: 30px;
+    }
+    .details .title{
+        padding-top: 0;
+        font-size: 28px;
+        margin-bottom: 7px
+    }
+    .product .author{
+        font-size: 16px;
+        margin-bottom: 8px
+
+    }
+    .product .rating i{
+        font-size: 13px;
+    }
+    .product .description p{
+        font-size: 12px;
+        line-height: 16px;
+        line-height: normal;
+    }
+    .product .amount{
+        font-size: 21px;
+    }
+    .price button{
+        font-size: 11px;
+        padding: 6px 22px;
+    }
+
+    .related-products{
+        padding: 30px 5%
+           
+    }
+    .reviews{
+        padding: 30px 5%
+    }
+    .related-products .heading ,.reviews .heading {
+       margin-bottom: 15px;
+    }
+
+    .related-products .heading h3,.reviews .heading h3{
+        font-size: 22px;
+    }
+    .review{
+        padding: 13px 0;
+    }
+
+    .review .image{
+        width: 40px;
+        height: 40px;
+    }
+    .review .details{
+       gap: 1px;
+    }
+    .review .name {
+        font-size: 13px;
+    }
+    .review .date{
+        font-size: 9px;
+    }
+    .review .rating i{
+        font-size: 9px;
+    }
+    .review .comment{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px){
+    .product{
+        padding: 20px 4%;
+        gap: 20px;
+    }
+    .details .title{
+   
+        font-size: 24px;
+        margin-bottom: 4px
+    }
+    .product .author{
+        font-size: 14px;
+        margin-bottom: 0px
+
+    }
+    .product .rating i{
+        font-size: 12px;
+    }
+    .product .description p{
+        font-size: 11px;
+        line-height: 16px;
+        line-height: normal;
+    }
+    .product .amount{
+        font-size: 19px;
+    }
+    .price button{
+        font-size: 9px;
+        padding: 5px 20px;
+    }
+
+    .related-products{
+        padding: 20px 4%
+           
+    }
+    .reviews{
+        padding: 20px 4%
+    }
+    .related-products .heading ,.reviews .heading {
+       margin-bottom: 13px;
+    }
+
+    .related-products .heading h3,.reviews .heading h3{
+        font-size: 20px;
+    }
+    .review{
+        padding: 12px 0;
+    }
+
+    .review .image{
+        width: 40px;
+        height: 40px;
+    }
+    .review .details{
+       gap: 1px;
+    }
+    .review .name {
+        font-size: 12px;
+    }
+    .review .date{
+        font-size: 8px;
+    }
+    .review .rating i{
+        font-size: 8px;
+    }
+    .review .comment{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .product{
+        padding: 20px 3%;
+        flex-direction: column;
+     
+    }
+
+
+    .product .image{
+        width: 100%;
+        height: 300px ;
+    }
+    .product .details{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .related-products{
+        padding: 20px 3%;
+
+           
+    }
+    .reviews{
+        padding: 20px 3%;
+
+    }
+    .related-products .heading ,.reviews .heading {
+       margin-bottom: 15px;
+    }
+
+    .related-products .heading h3,.reviews .heading h3{
+        font-size: 18px;
+    }
+    .review{
+        gap: 10px;
+    }
+
+    .review .image{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    
+}

@@ -1,0 +1,229 @@
+.hero {
+    background-color: #000000;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.hero-text {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+}
+
+.hero-text h1 {
+    font-size: 47px;
+    color: #CFAC33;
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 17px;
+    color: #556D30;
+    /* margin: 30px 0; */
+}
+
+.hero-text .btn{
+    text-align: center;
+    width: 25%;
+    background-color: #1A4C3D;
+    color: #F6EEE0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+    text-decoration: none;
+}
+
+.social-icons{
+    display: flex;
+    gap: 30px;
+}
+.social-icons .fa-brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 30px;
+    height: 30px;
+    border-radius:50% ;
+    background-color: #556D30;
+    font-size: 17px;
+    color: #F6EEE0;
+    cursor: pointer;
+}
+
+.hero-image{
+    /* width: 60%; */
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.hero-image img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+}
+@media (max-width: 1200px){
+    .hero{
+        padding: 20px 6%;
+    }
+    .hero img{
+        width: 400px;
+        height: 400px;
+    }
+    .hero-text{
+        gap: 25px;
+        align-items: flex-start;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p, .hero-text b{
+        font-size: 16px;
+    }
+    .hero-text .btn{
+        width: auto ;
+        font-size: 14px ;
+        padding: 9px 16px;
+        border-radius: 8px ;
+    }
+    
+    
+}
+@media (max-width: 992px){
+    .hero{
+        padding: 20px 5%;
+
+    }
+    .hero img{
+        width: 345px;
+        height: 345px;
+    }
+    .hero-text{
+        gap: 20px;
+        
+    }
+    .hero-text h1 {
+        font-size: 26px;
+    }
+    .hero-text p, .hero-text b{
+        font-size: 13px;
+    }
+    .hero-text .btn{
+       
+        font-size: 12px ;
+        padding: 8px 12px;
+        border-radius: 7px ;
+    }
+    .social-icons{
+        gap: 10px;
+    }
+    .social-icons .fa-brands{
+        width: 27px;
+        height: 27px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        padding: 20px 4%;
+    }
+
+    .hero img{
+        width: 275px;
+        height: 275px;
+    }
+    .hero-text{
+        gap: 20px;
+       
+    }
+
+    .hero-text h1 {
+        font-size: 23px;
+    }
+    .hero-text p , .hero-text b{
+        font-size: 11px;
+    }
+    .hero-text .btn{
+      
+        font-size: 10px ;
+        padding: 7px 10px;
+        border-radius: 5px ;
+        
+    }
+   
+    .social-icons .fa-brands{
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+    }
+
+}
+@media (max-width: 576px){
+    .hero{
+        flex-direction: column;
+        padding: 55px 3%;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .hero-text{
+        width: 100%;
+        gap: 15px;
+    }
+    .hero-text h1 {
+        font-size: 27px;
+    }
+    .hero-text p , .hero-text b{
+        font-size: 13px;
+    }
+    .hero-text .btn{
+        width: 100%;
+        
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 350px){
+    .hero{
+       
+        padding: 35px 3%;
+   
+    }
+    .hero-text{
+        width: 100%;
+        gap: 15px;
+    }
+    .hero-text h1 {
+        font-size: 27px;
+    }
+    .hero-text p , .hero-text b{
+        font-size: 13px;
+    }
+
+    .hero-text .btn{
+      
+        font-size: 13px ;
+        padding: 7px 14px;
+    }
+
+    
+
+    
+}
